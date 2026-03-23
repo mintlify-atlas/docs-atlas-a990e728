@@ -1,0 +1,220 @@
+{
+  "projectType": "cli-tool",
+  "projectName": "Graqle",
+  "projectDescription": "A CLI tool and Python SDK that builds a knowledge graph from any codebase and gives AI coding agents (Claude Code, Cursor, Copilot) architecture-aware reasoning via 27 MCP tools, 14 LLM backends, confidence-scored answers, and impact analysis.",
+  "theme": "palm",
+  "primaryColor": "#27b3a0",
+  "lightColor": "#1c736c",
+  "darkColor": "#0c1515",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/knowledge-graph",
+              "concepts/graph-of-agents",
+              "concepts/confidence-scores",
+              "concepts/drace-governance"
+            ]
+          },
+          {
+            "group": "IDE Integration",
+            "pages": [
+              "ide/overview",
+              "ide/claude-code",
+              "ide/cursor",
+              "ide/vscode",
+              "ide/windsurf"
+            ]
+          },
+          {
+            "group": "LLM Backends",
+            "pages": [
+              "backends/overview",
+              "backends/configuration",
+              "backends/ollama",
+              "backends/anthropic",
+              "backends/openai",
+              "backends/groq"
+            ]
+          },
+          {
+            "group": "Plugins",
+            "pages": [
+              "plugins/phantom",
+              "plugins/scorch"
+            ]
+          },
+          {
+            "group": "Cloud & Teams",
+            "pages": [
+              "cloud/overview",
+              "cloud/sync",
+              "cloud/teams"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/scanning",
+              "guides/impact-analysis",
+              "guides/teaching-the-graph",
+              "guides/governance",
+              "guides/security-privacy"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CLI Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "cli/overview"
+            ]
+          },
+          {
+            "group": "Scan & Build",
+            "pages": [
+              "cli/init",
+              "cli/scan",
+              "cli/compile",
+              "cli/verify",
+              "cli/grow"
+            ]
+          },
+          {
+            "group": "Query & Reason",
+            "pages": [
+              "cli/run",
+              "cli/reason",
+              "cli/context",
+              "cli/impact",
+              "cli/preflight",
+              "cli/lessons"
+            ]
+          },
+          {
+            "group": "Teach & Learn",
+            "pages": [
+              "cli/learn",
+              "cli/learned",
+              "cli/ingest"
+            ]
+          },
+          {
+            "group": "Infrastructure",
+            "pages": [
+              "cli/serve",
+              "cli/mcp-serve",
+              "cli/studio",
+              "cli/cloud",
+              "cli/doctor"
+            ]
+          },
+          {
+            "group": "SCORCH Auditing",
+            "pages": [
+              "cli/scorch"
+            ]
+          },
+          {
+            "group": "Phantom Browser",
+            "pages": [
+              "cli/phantom"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "MCP Tools",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "mcp/overview"
+            ]
+          },
+          {
+            "group": "Core Tools",
+            "pages": [
+              "mcp/graq-context",
+              "mcp/graq-reason",
+              "mcp/graq-impact",
+              "mcp/graq-preflight",
+              "mcp/graq-lessons",
+              "mcp/graq-learn"
+            ]
+          },
+          {
+            "group": "Governance Tools",
+            "pages": [
+              "mcp/graq-gate",
+              "mcp/graq-drace"
+            ]
+          },
+          {
+            "group": "Phantom Tools",
+            "pages": [
+              "mcp/graq-phantom-browse",
+              "mcp/graq-phantom-audit",
+              "mcp/graq-phantom-flow"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Knowledge graph builder that scans Python, TypeScript, Go, Rust, Java codebases into nodes and edges",
+    "Graph-of-Agents reasoning: each module becomes an autonomous agent that debates and synthesizes answers",
+    "27 MCP tools that plug into Claude Code, Cursor, VS Code Copilot, and Windsurf with zero config change",
+    "14 LLM backends including fully offline Ollama support and smart routing by task type",
+    "Impact analysis (blast radius) — which modules break if you change a given file",
+    "Preflight safety checks with DRACE governance scores (5 dimensions) before making changes",
+    "Persistent institutional memory: lessons survive chat resets and are surfaced automatically",
+    "Phantom plugin: browser automation giving AI agents real computer skills (click, type, audit)",
+    "SCORCH engine: 13-dimension UX friction auditing with Claude Vision",
+    "Confidence-scored, evidence-chained answers — never just 'I think...'"
+  ],
+  "publicApiSurface": [
+    "graq init",
+    "graq scan repo <path>",
+    "graq scan docs <path>",
+    "graq run <query>",
+    "graq context <module>",
+    "graq impact <component>",
+    "graq preflight <action>",
+    "graq learn <fact>",
+    "graq learned",
+    "graq grow",
+    "graq compile",
+    "graq verify",
+    "graq mcp serve",
+    "graq serve",
+    "graq studio",
+    "graq cloud push|pull",
+    "graq scorch run|behavioral|a11y|perf|seo|mobile|security",
+    "graq phantom browse|audit|discover|flow",
+    "graq doctor",
+    "graq plugins list|install",
+    "Graqle (Python class — core graph object)",
+    "CogniNode (graph node)",
+    "CogniEdge (graph edge)",
+    "Message (inter-agent message)",
+    "ReasoningResult (query result with confidence, cost, latency)",
+    "GraqleConfig (YAML config loader)"
+  ]
+}
